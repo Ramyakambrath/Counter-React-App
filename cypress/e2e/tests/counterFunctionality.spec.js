@@ -113,28 +113,6 @@ describe('Counter Functionality Test', () => {
         })
     }
 
-    // const clickDecrementButton =async (counterNumber,numberOfClicks) => {
-
-    //     clickIncrementButton(counterNumber,numberOfClicks);
-    //     let clicks = Array.from({ length: `${numberOfClicks}` }, (_, i) => i + 1)
-
-
-    //     clicks.forEach( async(click )=> {
-
-
-    //         const currentValue=await getcurrentCounterValue(counterNumber);
-    //         const actualCurrentValue=currentValue==='Zero'? 0:parseInt(currentValue);
-
-    //         console.log('actualCurrentValue',actualCurrentValue)
-
-    //         cy.get(`[data-test=counter-${counterNumber}]`).find(`[data-test=decrement]`).click().then(()=> {
-
-    //         cy.get(`[data-test=counter-${counterNumber}]`).find(`[data-test=counterValue]`).should(($listOfElements) => {
-    //             expect($listOfElements.text()).to.equal(`${actualCurrentValue}`=== '1' ?'Zero':`${actualCurrentValue - 1}`)
-    //         })
-    //     })
-    //      })
-    // }
 
     const getcurrentTotalValue = async () => {
 
