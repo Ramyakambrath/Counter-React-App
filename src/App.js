@@ -47,7 +47,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div data-test='app'>
         <NavBar
           totalCounters={this.state.counters.filter(c => c.value > 0).length}
         />

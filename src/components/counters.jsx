@@ -12,11 +12,12 @@ class Counters extends Component {
       onRestart
     } = this.props;
     return (
-      <div>
+      <div data-test="counter">
         <button
           className="btn btn-success m-2"
           onClick={onReset}
           disabled={counters.length === 0 ? "disabled" : ""}
+          data-test="reset"
         >
           <i className="fa fa-refresh" aria-hidden="true" />
         </button>
@@ -24,6 +25,7 @@ class Counters extends Component {
           className="btn btn-primary m-2"
           onClick={onRestart}
           disabled={counters.length !== 0 ? "disabled" : ""}
+          data-test="restart"
         >
           <i className="fa fa-recycle" aria-hidden="true" />
         </button>
